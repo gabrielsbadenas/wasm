@@ -15,5 +15,6 @@ extern {
 
 #[wasm_bindgen]
 pub fn greet() {
-    alert("Hello, webassembly!");
+    let x: i8 = 8;
+    alert(&x.to_string());
 }
