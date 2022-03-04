@@ -15,6 +15,10 @@ extern {
 
 #[wasm_bindgen]
 pub fn greet() {
-    let x: i8 = 8;
+    let x: i8 = kek();
     alert(&x.to_string());
+}
+
+fn kek()->i8{
+    return 9;
 }
